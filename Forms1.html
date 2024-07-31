@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <th colspan="2" style="background-color: aqua;"><strong><h1>Registration form</h1></strong></th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Enter name</td>
+                <td>
+                    <input type="text" id="firstName" name="firstName" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter password</td>
+                <td>
+                    <input type="password" id="password" name="password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter address</td>
+                <td>
+                    <textarea name="address" id="" cols="30" rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Game</td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="interests" value="hockey"> Hockey
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="interests" value="football"> Football
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="interests" value="cricket"> Cricket
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="interests" value="badminton"> Badminton
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="interests" value="volleyball"> Volleyball
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <label>
+                        <input type="radio" name="gender"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender"> Female
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Select your age</td>
+                <td>
+                    <select id="options" name="options" onchange="handleSelectionChange()">
+                        <option value="option1">Select</option>
+                        <option value="option1">20</option>
+                        <option value="option2">21</option>
+                        <option value="option3">22</option>
+                        <option value="option4">23</option>
+                        <option value="option1">24</option>
+                        <option value="option1">25</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Photo</td>
+                <td>
+                    <input type="file" id="fileInput" onchange="handleFileSelect()">
+                </td>
+            </tr>
+            <tr>
+                <td>Birth Month</td>
+                <td>
+                    <input type="text" id="txtList" placeholder="Select a month" list="months"/>
+                    <datalist id="months">
+                        <option value="January">
+                        <option value="February">
+                        <option value="March">
+                        <option value="April">
+                        <option value="May">
+                        <option value="June">
+                        <option value="July">
+                        <option value="August">
+                        <option value="September">
+                        <option value="October">    
+                        <option value="November">   
+                        <option value="December">      
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <button type="button" onclick="handleClickMe()">Click Me</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
